@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="C:\Program Files\AdoptOpenJDK\jre-8.0.282.8-hotspot" version="1.8.0_282">
+        <bootpath>
+            <entry path="C:\Program Files\AdoptOpenJDK\jre-8.0.282.8-hotspot\lib\resources.jar"/>
+            <entry path="C:\Program Files\AdoptOpenJDK\jre-8.0.282.8-hotspot\lib\rt.jar"/>
+            <entry path="C:\Program Files\AdoptOpenJDK\jre-8.0.282.8-hotspot\lib\sunrsasign.jar"/>
+            <entry path="C:\Program Files\AdoptOpenJDK\jre-8.0.282.8-hotspot\lib\jsse.jar"/>
+            <entry path="C:\Program Files\AdoptOpenJDK\jre-8.0.282.8-hotspot\lib\jce.jar"/>
+            <entry path="C:\Program Files\AdoptOpenJDK\jre-8.0.282.8-hotspot\lib\charsets.jar"/>
+            <entry path="C:\Program Files\AdoptOpenJDK\jre-8.0.282.8-hotspot\lib\jfr.jar"/>
+            <entry path="C:\Program Files\AdoptOpenJDK\jre-8.0.282.8-hotspot\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="C:\Program Files\AdoptOpenJDK\jre-8.0.282.8-hotspot\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="C:\Program Files\AdoptOpenJDK\jre-8.0.282.8-hotspot\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\Program Files\Java\jdk-22" version="22.0.2"/>
+</libraryInfos>
