@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset ="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title> Aumentar e diminuir texto em navegador </title>
+        <link type="text/css" rel="stylesheet" href = "style.css">
+    </head>
+<body>
+    <header>
+        <a href="#" class="btn-abrir" onclick="abrirmenu()"> &#9776; </a> 
+    </header>
+    <nav id="lateralinfo">
+        <a href="#" class="btn-fechar" onclick="fecharmenu()"> &lt; </a>
+        <ul class="listalateral">
+            <li>Soluções
+                <!-- Botão para expandir/contrair a lista de opções abaixo de HOME -->
+                <button onclick="Expandir('solucoes',this)">&#43;</button>
+                <span id="solucoesOpcoes" style="display:none;">
+                    <ul class="listaSolucoes">
+                        <li><a href="nullpage.html">Controle acadêmico e de Funcionalidades
+                            acadêmicas</a>
+                        </li>
+                        <li><a href="nullpage.html">Gestão de atendimentos reais e
+                            simulados</a>
+                        </li>
+                        <li><a href="nullpage.html">Projetos de 
+                            Extensão e Trabalhos de Conclusão</a>
+                        </li>
+                    </ul>
+                </span>
+            </li>
+    
+            <li>Funcionalidades
+                <!-- Botão para expandir/contrair a lista de opções abaixo de SOBRE -->
+                <button onclick="Expandir('Funcionalidades',this)">&#43;</button>
+                <span id="FuncionalidadesOpcoes" style="display:none;">
+                    <ul class="listaFuncionalidades">
+                    <li id="academico">Gestão Acadêmica</li> 
+                        <li><a href="nullpage.html">Gestão de Turmas e Disciplinas</a></li>
+                        <li><a href="nullpage.html">Gestão de Atividades Acadêmicas</a></li>
+                        <li><a href="nullpage.html">Biblioteca de Práticas</a></li>
+                        <li><a href="nullpage.html">Avaliações Individualizadas</a></li>
+                        <li><a href="nullpage.html">Sistema de Questões</a></li>
+                        <li><a href="nullpage.html">Perfil do Aluno</a></li>
+                        <li><a href="nullpage.html">Sistema de Plantões</a></li>
+                        <li><a href="nullpage.html">Sistema de Times</a></li>
+                        <li><a href="nullpage.html">Pré-correção de Peças</a></li>
+                        <li><a href="nullpage.html">ertificados de Horas Externas</a></li>
+                        <li><a href="nullpage.html">Gestão de Atendimentos</a></li> 
+                    <li id="atendimentos">Gestão de Atendimentos</li>
+                        <li><a href="nullpage.html">Sistema de Geração 
+                            de Documentos Automáticos</a></li>
+                        <li><a href="nullpage.html">Controle de intimações e processos</a></li>
+                        <li><a href="nullpage.html">Calculadora de Prazos com IA</a></li>
+                    <li id="extensao">Extensão e TCC</li> 
+                        <li><a href="nullpage.html">Relatórios de Atividades 
+                            e Projetos de Extensão</a></li>
+                    </ul>
+                </span>
+            </li>
+    
+            <li>Conteúdo
+                <!-- Botão para expandir/contrair a lista de opções abaixo de CONTATO -->
+                <button onclick="Expandir('conteudo',this)">&#43;</button>
+                <span id="conteudoOpcoes" style="display:none;">
+                    <ul class="listaConteudo">
+                    <li id="conteudos">Conteúdos</li> 
+                        <li><a href="nullpage.html">Todas as publicações</li></a>
+                        <li><a href="nullpage.html">Notícias</li></a>
+                        <li><a href="nullpage.html">Artigos</li></a>
+                        <li><a href="nullpage.html">Tutoriais</li></a>
+                    <li id="livros">eBooks</li>
+                        <li><a href="nullpage.html">NPJ Ideal</li></a>
+                        <li><a href="nullpage.html">Precificação de Cursos de Direito</li></a>
+                        <li><a href="nullpage.html">Qualidade dos cursos de Direito no Brasil</li></a>
+                        <li><a href="nullpage.html">Coordenação do Curso de Direito</li></a>
+                        <li><a href="nullpage.html">Os cursos de Direito ofertados no Brasil em números</li></a>
+                        <li><a href="nullpage.html">Evidências de funcionamento do NPJ para a avaliação do INEP</li></a>
+                    <li id="magazines">Revistas</li>
+                        <li><a href="nullpage.html">1ª Edição: Tendências do Ensino Jurídico</li></a>
+                        <li><a href="nullpage.html">2ª Edição: A Melhor Gestão para o seu NPJ</li></a>
+                      
+                    </ul>
+                </span>
+            </li>
+    
+            <li>SERVIÇOS
+                <!-- Botão para expandir/contrair a lista de opções abaixo de SERVIÇOS -->
+                <button onclick="Expandir('servicos',this)">&#43;</button>
+                <span id="servicosOpcoes" style="display:none;">
+                    <ul>
+                        <li><a href="#">Consultoria</a></li>
+                        <li><a href="#">Desenvolvimento</a></li>
+                        <li><a href="#">Design</a></li>
+                    </ul>
+                </span>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="scrollbarContainer">
+        <div id="scrollbar"></div>
+    </div>
+
+    <nav id="info">
+        <ul>
+            <li>HOME<button onclick=Expandir() id="btnmaisinfo">&#43;</button></li>
+            <span id ="principal1">..</span><span id = "expandirservicos1">
+            <li>SOBRE<button onclick=Expandir() id="btnsobre"> &#43;</button></li>
+            <li>CONTATO<button onclick=Expandir() id="btncontato"> &#43;</button></li>
+            <li>SERVIÇOS<button onclick=Expandir() id="btnserviços"> &#43;</button></li>
+        </span>
+        </ul>
+    </nav>
+    <main>
+    <pre><h1>  EX-Text </h1></pre>
+
+    <p id="texto1" align:"left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Aenean accumsan velit sed nibh cursus facilisis. 
+    Donec dictum quam ac laoreet porttitor. 
+    In egestas ultrices eros, vel convallis sem gravida ut. 
+    Ut tristique egestas sagittis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Integer fringilla eros non<span id ="pontos1">...</span><span id="mais1"> sapien convallis, nec suscipit dui rhoncus. Suspendisse et dolor sapien. 
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+    Phasellus est enim, laoreet quis viverra ut, lobortis a justo. Morbi at sapien purus. 
+    Nunc ultricies velit tortor, nec efficitur arcu gravida eu. Nunc convallis tempor mi, id pretium orci semper scelerisque.
+    In magna odio, scelerisque sed viverra blandit, tincidunt vitae neque.</span><br><br> 
+
+
+    <p id="texto2" align:"Justify"><span id="pontos2"></span><span id="mais2">Aenean dapibus, enim at sagittis venenatis, ante massa sodales purus, vitae luctus ipsum nisl a mi. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate, urna id suscipit auctor, libero velit tincidunt velit, vel varius arcu tortor vel justo. 
+    Nunc et tempus justo. Nulla sem lorem, venenatis a gravida sit amet, venenatis id lorem. 
+    Aliquam faucibus orci et nulla lobortis, vel tincidunt elit semper.
+    Nulla suscipit ipsum nec mi accumsan vulputate. 
+    Nam eu lacinia diam, ut accumsan ex. Fusce nunc ex, pharetra eget lacus at, sodales interdum felis. 
+    Vivamus sit amet tincidunt augue, at congue lectus. Cras vitae mollis libero. Suspendisse potenti. 
+    Nullam ante lorem, pharetra eu metus a, cursus blandit lectus. Vestibulum tempor odio non lorem lobortis, a hendrerit nisl lobortis.</span></p>
+
+    <button onclick=LeiaMais() id="btnleiamais">Leia-Mais &#43;</button>
+    <script type="text/javascript" src="acao.js" charset = "utf-8"></script>
+    <script type="text/javascript" src="expandirarea.js" charset = "utf-8"></script>
+    <script type="text/javascript" src="barrarolagem.js" charset = "utf-8"></script>
+</main>
+
+
+
+</body>
+</html>
