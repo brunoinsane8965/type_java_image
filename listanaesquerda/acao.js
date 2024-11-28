@@ -21,26 +21,18 @@ function LeiaMais(){
 
     btnleiamais.innerHTML = todosexpandidos ? "Leia-Menos -" : "Leia-Mais +";
 }
-function Expandir(){
-    var principal=document.querySelectorAll("[id^='principal']");
-    var opcoes=document.querySelectorAll("[id^='expandirservicos']");
-    var btnmaisinfo=document.getElementById("btnmaisinfo");
-    var todosexpandidos = true;
+function Expandir(menu, button) {
 
-    pontos.forEach(function(principal, index){
+        var opcoes = document.getElementById(menu + "Opcoes");
 
-        if (principal.style.display === "none"){
-        principal.style.display="inline";
-        opcoes[index].style.display="none";
-        todosexpandidos = false;
-
-        }else{
-
-        principal.style.display="none";
-        opcoes[index].style.display="inline";
-        
-    }
-    });
-
-    btnmaisinfo.innerHTML = todosexpandidos ? "-" : "+";
-}
+        // Verifica se a lista está visível ou não
+        if (opcoes.style.display === "none" || opcoes.style.display === "") {
+            // Mostra a lista
+            opcoes.style.display = "block";
+            button.innerHTML = "&#8722;";
+        } else {
+            // Esconde a lista
+            opcoes.style.display = "none";
+            button.innerHTML = "&#43;";
+            }
+        }

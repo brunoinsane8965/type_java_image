@@ -1,7 +1,11 @@
 #mais1{display: none}
 #mais2{display: none}
 a{
-    text-decoration: none
+    text-decoration: none;
+    color: #011c1c
+}
+.listalateral a:active{
+ color:lightblue;
 }
 .btn-abrir{
     
@@ -30,16 +34,31 @@ nav{
     left:0;
     z-index: 1;
     overflow:hidden;
+    overflow:auto;
     transition: width 0.5s;
 }
-
-ul.listalateral {
+ul.listalateral{
     color:black;
     display:block;
     list-style:none;
     margin-left: -35px;
 
 }
+.listalateral ul {
+    color:black;
+    display:block;
+    list-style:none;
+    margin-left: 1px;
+}
+li #academico,#atendimentos,#extensao{
+    margin-left: -35px;
+
+}
+
+li #conteudos,#livros,#magazines{
+    margin-left: -35px;
+}
+
 /*
 ul.listalateral :hover{
     background-color:blue;

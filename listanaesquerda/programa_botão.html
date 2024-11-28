@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Sumir</title>
+    <style>
+        /* Estilo para o botão */
+        #meuBotao {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Estilo para o conteúdo que será exibido */
+        #conteudo {
+            display: none; /* Inicialmente invisível */
+            padding: 20px;
+            background-color: lightgray;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botão -->
+    <button id="meuBotao" onclick="mostrarConteudo()">Abrir Conteúdo</button>
+
+    <!-- Conteúdo que será exibido -->
+    <div id="conteudo">
+        <p>Este é o conteúdo que será exibido.</p>
+    </div>
+
+    <script>
+        // Função para exibir o conteúdo e esconder o botão
+        function mostrarConteudo() {
+            var conteudo = document.getElementById("conteudo");
+            if (conteudo.style.display === "none" || conteudo.style.display === "") {
+                // Torna o conteúdo visível
+                conteudo.style.display = "block";
+            // Torna o conteúdo visível
+        } else {
+                // Torna o conteúdo invisível
+                conteudo.style.display = "none";
+        }
+    }
+    </script>
+
+</body>
+</html>
